@@ -48,7 +48,6 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        flex-direction: row-reverse;
         margin: 8px 0;
     }
     
