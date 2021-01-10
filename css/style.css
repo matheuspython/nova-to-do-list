@@ -6,39 +6,66 @@
         border-radius: 10px;
     }
     
-    form input,
-    form label,
-    form button {
-        margin-bottom: 10px;
-        display: block;
+    section.container h1 {
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    section.container p {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    section.container p input {
+        padding-left: 8px;
+        height: 40px;
+        margin-bottom: 8px;
+    }
+    
+    section.container p button {
+        border: 0;
+        padding: 10px;
+        cursor: pointer;
+        font-size: .9rem;
+        text-transform: uppercase;
+        background-color: rgb(52, 145, 233);
+        border-radius: 12px;
+        color: white;
+        transition: .1s;
+    }
+    
+    section.container p button:hover {
+        background-color: rgb(23, 23, 219);
+        font-size: 1rem;
+    }
+    
+    section.container ul.tarefas {
+        list-style-type: none;
         width: 100%;
     }
     
-    form input {
-        font-size: 24px;
-        height: 50px;
-        padding: 0 20px;
+    section.container ul.tarefas li {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+        margin: 8px 0;
     }
     
-    form input:focus {
-        outline: 1px solid var(--primary-color);
-    }
-    
-    form button {
-        border: none;
-        background: var(--primary-color);
-        color: #fff;
-        font-size: 18px;
-        font-weight: bold;
-        height: 50px;
+    section.container ul.tarefas li button {
+        border: 0;
+        background-color: rgb(36, 103, 179);
+        border-radius: 8px;
+        padding: 5px 9px;
+        color: white;
         cursor: pointer;
-        margin-top: 30px;
+        font-size: 16px;
+        font-weight: normal;
+        transition: .2s;
     }
     
-    form button:hover {
-        background: var(--primary-color-darker);
-    }
-    
-    form button:active {
-        background-color: aqua;
+    section.container ul.tarefas li button:hover {
+        font-size: 18px;
+        background-color: rgb(10, 82, 165);
+        text-transform: uppercase;
     }
